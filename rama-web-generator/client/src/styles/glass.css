@@ -1,0 +1,37 @@
+.glass-panel {
+  background: rgba(25, 25, 35, 0.7);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(199, 112, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 16px rgba(199, 112, 255, 0.15) inset;
+  transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.4),
+    0 0 24px rgba(199, 112, 255, 0.25) inset;
+}
+
+.neon-purple-glow {
+  text-shadow: 0 0 10px rgba(199, 112, 255, 0.8);
+}
+
+body {
+  background: linear-gradient(135deg, #1a0633 0%, #0d1b2a 100%);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
